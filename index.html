@@ -9,9 +9,36 @@
   <link rel="shortcut icon" href="images/etchy2.ico" />
   <link rel="stylesheet" href="styles.css">
   <script src="etch-a-sketch-func.js" defer></script>
-  </head>
+</head>
 
-  <body>
+<body>
+<header class="header">
+  <h1 class="title">Etch-A-Sketch</h1>
+</header>
 
+<main class="main">
+  <div class="settings">
+    <input id="colorPicker" type="color" value="#333333" />
+    <button id="colorBtn">Color mode</button>
+    <button id="rainbowBtn">Rainbow mode</button>
+    <button id="eraserBtn">Eraser</button>
+    <button id="clearBtn">Clear</button>
+    <div id="sizeValue" class="size-value">16 x 16</div>
+  </div>
+<div class="screen" id="screen">
+
+</div>
+</main>
+<footer class="footer">
+  <p>
+    Copyright ©
+    <script>
+      document.write(new Date().getFullYear())
+    </script>
+    michalosman
+  </p>
+  <a href="https://github.com/michalosman" target="_blank">
+    <i class="fab fa-github"></i></a>
+</footer>
 </body>
 </html>
