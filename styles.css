@@ -70,6 +70,7 @@ input {
 }
 
 button {
+  background-color: white;
   padding: 10px 20px;
   border: 4px solid var(--primary-etch);
   border-radius: 5px;
@@ -109,7 +110,7 @@ input[type='range']::-webkit-slider-runnable-track {
   height: 10px;
   border: 1px solid var(--primary-dark);
   border-radius: 25px;
-  background: var(--secondary-light);
+  background: var(--primary-etch);
 }
 
 input[type='range']::-webkit-slider-thumb {
@@ -130,11 +131,17 @@ input[type='range']::-webkit-slider-thumb {
   display: grid;
   width: 500px;
   height: 500px;
-  background-color: var(--secondary-light);
+  background-color: white;
   border: 26px var(--primary-etch) solid;
   border-radius: 16px;
   box-shadow: var(--primary-light) 6px 10px;
   }
+
+.pixel {
+  user-select: none;
+  background-color: white;
+  border: var(--primary-light) 1px solid;
+}
 
 /* Footer */
  footer {
