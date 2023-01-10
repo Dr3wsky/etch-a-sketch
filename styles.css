@@ -76,6 +76,7 @@ button {
   border-radius: 5px;
 }
 
+
 button:focus {
   background-color: var(--primary-etch);
   color: var(--secondary-light);
@@ -86,6 +87,10 @@ input[type='color']:hover {
   transform: scale(1.05);
 }
 
+#clear:active { 
+  background-color: white;
+  color: var(--secondary-light);
+}
 input[type='color'] {
   -webkit-appearance: none;
   width: 80px;
@@ -133,7 +138,7 @@ input[type='range']::-webkit-slider-thumb {
   height: 500px;
   background-color: white;
   border: 26px var(--primary-etch) solid;
-  border-radius: 16px;
+  border-radius: 18px;
   box-shadow: var(--primary-light) 6px 10px;
   }
 
