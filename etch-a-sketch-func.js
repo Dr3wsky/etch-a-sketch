@@ -6,7 +6,7 @@ const DEFAULT_SIZE = 16;
 let color = DEFAULT_COLOR;
 let size = DEFAULT_SIZE;
 let mode = DEFAULT_MODE;
-let mouseDown = false;
+
 
 const colorPicker = document.getElementById('colorPicker');
 const colorBtn = document.getElementById('colorBtn');
@@ -18,10 +18,16 @@ const sizeSlider = document.getElementById('sizeSlider');
 const screen = document.getElementById('screen');
 
 window.onload = () => {
-    makePixels(16);
+    makePixels(DEFAULT_SIZE);
 };
 
 /* Add events to settings */
+
+/* Changes start of mouseDown variable, to allow continuous drawing */
+let mouseDown = false;
+window.onmousedown = () => (mouseDown = true);
+window.onmouseup = () => (mouseDown = false);
+
 clearBtn.onclick = () => resetScreen();
 
 
@@ -53,6 +59,6 @@ function draw(e) {
     if (e.type == 'mouseover' && !mouseDown) return;
     if (mode == 'color') {
         e.target.style.backgroundColor = color;
-        e.target.style.border = color .5px solid;
+        e.target.style.border = color;
     };
 };
