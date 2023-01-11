@@ -32,6 +32,7 @@ colorPicker.oninput = (e) => setColor(e.target.value);
 colorBtn.onclick = () => setMode("color");
 rainbowBtn.onclick = () => setMode("rainbow");
 eraserBtn.onclick = () => setMode("eraser");
+sizeSlider.oninput = (e) => setScreenSize(e.target.value);
 
 /* Define working functions */
 function clearScreen() {
@@ -41,6 +42,12 @@ function clearScreen() {
 function resetScreen() {
   clearScreen();
   makePixels(activeSize);
+}
+
+function setScreenSize(newSize) {
+  activeSize = newSize;
+  resetScreen();
+  sizeValue.innerHTML = `${newSize} x ${newSize}`;
 }
 
 function setColor(newColor) {

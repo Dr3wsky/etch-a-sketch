@@ -1,8 +1,0 @@
-JS functions to write: 
-
-- Initialize default values for color and pixel size
-- Generate grid divs to create pixels
-- change pixel colour on mousedown
-- Reset color to primary light on mouse-down
-- clear and reset grid on clear
-
