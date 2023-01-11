@@ -76,10 +76,14 @@ button {
   border-radius: 5px;
 }
 
-
-button:focus {
+button.active {
   background-color: var(--primary-etch);
   color: var(--secondary-light);
+}
+
+button,
+input[type='color'] {
+  transition: transform 0.1s ease-in-out;
 }
 
 button:hover,
@@ -87,10 +91,11 @@ input[type='color']:hover {
   transform: scale(1.05);
 }
 
-#clear:active { 
-  background-color: white;
-  color: var(--secondary-light);
+input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
 }
+
 input[type='color'] {
   -webkit-appearance: none;
   width: 80px;
@@ -105,6 +110,11 @@ input[type='color']::-webkit-color-swatch-wrapper {
 input[type='color']::-webkit-color-swatch {
   border: none;
   border-radius: 50px;
+}
+
+.size-value {
+  margin-top: 8px;
+  font-size: 20px;
 }
 
 input[type='range'] {
@@ -125,11 +135,6 @@ input[type='range']::-webkit-slider-thumb {
   border-radius: 25px;
   margin-top: -8px;
   background: var(--primary-dark);
-}
-
-.size-value {
-  margin-top: 8px;
-  font-size: 20px;
 }
 
 .screen {
