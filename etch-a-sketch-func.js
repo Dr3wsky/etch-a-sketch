@@ -87,7 +87,7 @@ function draw(e) {
   }
   if (activeMode === "eraser") {
     e.target.style.backgroundColor = "white";
-    e.target.style.border = 'var(--primary-light) 1px solid';
+    e.target.style.border = "var(--primary-light) 1px solid";
   }
 }
 
