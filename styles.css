@@ -66,6 +66,7 @@ input {
   justify-content: center;
   gap: 16px;
   width: 180px;
+  margin-left: 16px;
 }
 
 input[type="color"] {
@@ -145,6 +146,7 @@ input[type="range"]::-webkit-slider-thumb {
   border: 26px var(--primary-etch) solid;
   border-radius: 18px;
   box-shadow: var(--primary-light) 6px 10px;
+  margin-right: 16px;
 }
 
 .pixel {
